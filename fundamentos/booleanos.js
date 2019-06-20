@@ -29,5 +29,4 @@ console.log('pra finalizar...')
 console.log(!!('' || null || 0 || ' '))
 
 let nome = 'Gean'
-
 console.log(nome || 'Desconhecido')
