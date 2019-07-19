@@ -1,3 +1,6 @@
 node_modules
 node_modules/*
 branches
+node_modules/lodash
+info
+hooks
