@@ -19,3 +19,9 @@
 * **funcao1.js:** exemplos de função com e sem retorno.
 * **funcao2.js:** exemplos de outros usos para uma função, sendo armazenada em variável, função arrow e com retorno implícito.
 * **funcaoEmQuaseTudo.js:** exemplo que mostra que o tipo de Object é função e uma class também é uma função em js.
+* **hoisting.js:** exemplo de hoisting, que é como a linguagem js carrega var que foi chamada mas não foi criada, atribuindo undefinded.
+* **logicos.js:** exemplos de operadores lógicos and(&&), or(||) e not (!).
+* **math.js:** exemplo do uso do objeto Math na linguagem js.
+* **notacaoPonto.js:** exemplo do uso da notação ponto, seja para acessar um método de um objeto ou propriedade de uma variável.
+* **nullUndefined.js:** exemplo de variáveis nulas e indefinidas, mostrando esse conceito na linguagem js.
+* **numeros.js:** exemplo de atibuições numéricas, testes com números e mostrando que Number é uma função em js.
