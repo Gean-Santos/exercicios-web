@@ -1,0 +1,25 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "## Exercícios feitos durante o curso de Desenvolvedor Web Moderno ## ### Fundamentos de Javascript:",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.15",
+    "node-schedule": "1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gean-Santos/exercicios-js.git"
+  },
+  "author": "Gean-Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gean-Santos/exercicios-js/issues"
+  },
+  "homepage": "https://github.com/Gean-Santos/exercicios-js#readme"
+}
