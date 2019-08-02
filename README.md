@@ -1,4 +1,4 @@
-# Meus exercícios JS
+# Meus exercícios Web
 ##
 
 ## Exercícios feitos durante o curso de Desenvolvedor Web Moderno
