@@ -1,0 +1,78 @@
+<video id="meuVideo" width="800" height="450" autoplay controlsList="nodownload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+    Seu browser não suporta vídeo.
+</video>
+
+<div wm-progresso="meuVideo" class="progresso">
+    <div></div>
+</div>
+
+<div>
+    <button wm-play="meuVideo">Play</button>
+    <button wm-pause="meuVideo">Pause</button>
+</div>
+
+<style>
+    .progresso{
+        height: 20px;
+        width: 500px;
+        border: solid 1px #444;
+        margin: 20px;
+    }
+    .progresso > div{
+        background-color: red;
+        color: #fff;
+        height: 100%;
+        text-align: right;
+        font-size: 14px;
+        width: 0%;
+    }
+</style>
+<script>
+
+    function configurarVideo(id){
+        const video = document.getElementById(id)
+        video.oncontextmenu = () => false
+
+        document.querySelector(`[wm-play=${id}]`).onclick = e => video.play()
+        document.querySelector(`[wm-pause=${id}]`).onclick = e => video.pause()
+
+        setInterval(() => {
+            var percentual = (video.currentTime / video.duration)*100
+            const barra = document.querySelector(`[wm-progresso=${id}] > div`)
+            barra.style.width = `${percentual}%`
+            barra.innerHTML = `${percentual.toFixed(1)}%`
+        }, 500)
+
+    }
+    configurarVideo('meuVideo')
+    
+    // const video = document.getElementById('meuVideo')
+    // const inic = 0
+    
+    // function alteraBarra(){
+    //     const barra = document.querySelector('[wm-progresso] > div')
+    //     var at = video.currentTime
+    //     const f = video.duration
+    //     const acabou = video.ended
+    //     carregaBarra(barra, inic, at, f)
+    // }
+    // function carregaBarra(barrinha, inicio, atual, final){
+    //     if(atual<=final)
+    //     barrinha.style.width = (atual*10) + 'px'
+    //     else
+    //     barrinha.style.width = '500px'
+    // }
+   
+    //  function comecou() {
+    //      if(video.ended==true){
+    //          video.currentTime = 0
+    //      }
+    //     video.play()  
+    // }
+
+    // function parou (){
+    //     video.pause()
+    //     console.log(video.currentTime, video.duration, video.ended)
+    // }
+</script>
